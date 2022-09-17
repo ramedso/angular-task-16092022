@@ -20,5 +20,9 @@ export class RafaelRandomNumbersComponentsComponent implements OnInit {
     for (let i = 0; i < arr.length; i++) {
       console.log(arr[i]);
     }
+
+    const para = document.createElement('p');
+    para.innerText = 'RESULT AT THE CONSOLE!';
+    document.body.appendChild(para);
   }
 }
