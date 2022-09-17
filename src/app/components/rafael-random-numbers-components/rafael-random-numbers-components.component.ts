@@ -21,8 +21,8 @@ export class RafaelRandomNumbersComponentsComponent implements OnInit {
       console.log(arr[i]);
     }
 
-    const para = document.createElement('p');
-    para.innerText = 'RESULT AT THE CONSOLE!';
-    document.body.appendChild(para);
+    const result = document.createElement('p');
+    result.innerText = 'RESULT AT THE CONSOLE!';
+    document.body.appendChild(result);
   }
 }
