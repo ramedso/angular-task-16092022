@@ -12,11 +12,13 @@ export class RafaelRandomNumbersComponentsComponent implements OnInit {
 
   ngOnInit() {}
 
-  generateRandomNumbers(): number {
-    return Math.floor(Math.random() * 1000);
-  }
+  generateRandomNumbers() {
+    let arr = Array.from({ length: Number(this.n1) }, () =>
+      Math.floor(Math.random() * 100)
+    );
 
-  getRandomNumbers() {
-    return this.generateRandomNumbers();
+    for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+    }
   }
 }
