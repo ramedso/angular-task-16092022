@@ -21,5 +21,5 @@ export class RafaelRandomNumbersComponentsComponent implements OnInit {
       para.appendChild(node);
     }
     this.counter++;
-
+  }
 }

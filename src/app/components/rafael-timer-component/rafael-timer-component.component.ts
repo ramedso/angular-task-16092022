@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rafael-timer-component.component.css'],
 })
 export class RafaelTimerComponentComponent implements OnInit {
-  counter = 0;
+  counter: number = 0;
 
   timer = setInterval(() => {
     this.counter++;
@@ -17,6 +17,6 @@ export class RafaelTimerComponentComponent implements OnInit {
   ngOnInit() {}
 
   getSeconds() {
-    return this.timer;
+    return this.counter;
   }
 }
