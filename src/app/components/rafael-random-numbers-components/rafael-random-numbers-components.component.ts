@@ -8,16 +8,18 @@ import { Component, Input, OnInit } from '@angular/core';
 export class RafaelRandomNumbersComponentsComponent implements OnInit {
   @Input() n1: string;
 
+  counter = 0;
+
   constructor() {}
 
   ngOnInit() {}
 
   getRandomNumbers() {
-    var counter = 0;
-
-    while(counter <= Number(this.n1)){
-      return Math.random();
-      counter++;
+    while (this.counter <= Number(this.n1)) {
+      const para = document.createElement('p');
+      const node = document.createTextNode(Math.random().toString());
+      para.appendChild(node);
     }
-  }
+    this.counter++;
+
 }
